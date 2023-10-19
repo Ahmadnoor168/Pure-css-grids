@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        gap: 10px;
+      }
+      .container div {
+        background-color: #3bbced;
+        padding: 30px;
+      }
+      .container div:nth-child(even) {
+        background-color: #777;
+      }
+      .one {
+        grid-column: span 12;
+      }
+      .two {
+        grid-column: 4/13;
+        grid-row: 2/4;
+      }
+      .four {
+        grid-column: 1/4;
+        /* grid-row: 2/4; */
+      }
+      .three {
+        grid-column: 1/13;
+        grid-row: 4/6;
+      }
+      .five {
+        grid-column: 1/4;
+      }
+      .six {
+        grid-column: 1/13;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap">
+      <a href="./index.html">Index</a>
+      <a href="./grid-row.html">Grid Row</a>
+      <a href="./grid-lines.html">Grid Lines</a>
+      <a href="./nested-grid.html"> Nested Grid</a>
+      <a href="./grid-areas.html">Grid Areas</a>
+      <a href="./align-justify.html">Align Justify</a>
+      <a href="./mosaic.html">Mosaic</a>
+      <a href="./Project1/grid.html">Assignment - 01</a>
+      <a href="./Project2/index.html">Assignment - 02</a>
+      <a href="./Project3/index.html">Assignment - 03</a>
+    </div>
+
+    <div class="container">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+    </div>
+  </body>
+</html>

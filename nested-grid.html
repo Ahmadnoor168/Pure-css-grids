@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .container div {
+        background-color: #3bbced;
+        padding: 30px;
+      }
+      .container div:nth-child(even) {
+        background-color: #777;
+      }
+      .nested {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        grid-column: span 3;
+      }
+      .nested > p:nth-child(even) {
+        background-color: rgb(129, 99, 44);
+        padding: 20px;
+      }
+      .nested > p:nth-child(odd) {
+        background-color: rgb(216, 77, 77);
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap">
+      <a href="./index.html">Index</a>
+      <a href="./grid-row.html">Grid Row</a>
+      <a href="./grid-lines.html">Grid Lines</a>
+      <a href="./grid-layout.html">Grid Layout</a>
+      <a href="./grid-areas.html">Grid Areas</a>
+      <a href="./align-justify.html">Align Justify</a>
+      <a href="./mosaic.html">Mosaic</a>
+      <a href="./Project1/grid.html">Assignment - 01</a>
+      <a href="./Project2/index.html">Assignment - 02</a>
+      <a href="./Project3/index.html">Assignment - 03</a>
+    </div>
+
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div class="nested">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+      </div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>

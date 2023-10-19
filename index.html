@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: grid;
+        /* grid-template-columns: 33.33% 33.33% 33.33% ; */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .container div {
+        background-color: #3bbced;
+        padding: 30px;
+      }
+      .container div:nth-child(even) {
+        background-color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap">
+      <a href="./grid-row.html">Grid Row</a>
+      <a href="./grid-lines.html">Grid Lines</a>
+      <a href="./nested-grid.html"> Nested Grid</a>
+      <a href="./grid-layout.html">Grid Layout</a>
+      <a href="./align-justify.html">Align Justify</a>
+      <a href="./grid-areas.html">Grid Areas</a>
+      <a href="./mosaic.html">Mosaic</a>
+      <a href="./Project1/grid.html">Assignment - 01</a>
+      <a href="./Project2/index.html">Assignment - 02</a>
+      <a href="./Project3/index.html">Assignment - 03</a>
+    </div>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+  </body>
+</html>
